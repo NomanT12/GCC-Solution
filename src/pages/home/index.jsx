@@ -1,15 +1,19 @@
 import React from "react";
+import "./style.css";
 import styled from "styled-components";
 import NotificationBar from "components/notification-bar";
 import HeaderContainer from "components/common/header-container";
 import Card02 from "components/common/cards/card02";
 import Card03 from "components/common/cards/card03";
 import Cards from "components/common/cards/card01";
-
+import FemalCard from "components/common/individualcard/FemalCard";
+import MenCard from "components/common/individualcard/MenCard";
+import VisaProcessingCard from "components/common/individualcard/VisaProcessingCard";
 const Home = () => {
   const CardsContainer = styled.div`
     display: flex;
     gap: 30px;
+    
   `;
   const CardsHeading = styled.p`
     color: #000;
@@ -35,6 +39,11 @@ const Home = () => {
           <Card02 />
           <Card03 />
         </CardsContainer>
+        <div className="FourthSection-Container">
+          <FemalCard />
+          <VisaProcessingCard />
+          <MenCard />
+        </div>
       </div>
     </>
   );

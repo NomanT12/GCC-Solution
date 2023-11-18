@@ -1,0 +1,30 @@
+.IndividualCardImage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Individual-Background {
+  width: 266px;
+  height: 132px;
+  background: rgba(79, 138, 139, 0.85);
+  filter: blur(125px);
+}
+.Individual-ContentP {
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: uppercase;
+}
+.Individual-Content01P {
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-transform: uppercase;
+}
