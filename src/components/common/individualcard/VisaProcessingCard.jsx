@@ -2,20 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 const VisaProcessingCard = () => {
-  const VisaProcessingCardContainer = styled.div`
-    background: #f0f0f0;
-    width: 33%;
-    height: 785px;
-    padding: 45px;
-    margin-top: 62px;
-  `;
-
-  const VisaProcessingMainContainer = styled.div`
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  `;
   return (
     <VisaProcessingCardContainer>
       <VisaProcessingMainContainer>
@@ -36,3 +22,17 @@ const VisaProcessingCard = () => {
 };
 
 export default VisaProcessingCard;
+
+const VisaProcessingCardContainer = styled.div`
+  background: #f0f0f0;
+  width: 33%;
+  height: 785px;
+  padding: 45px;
+`;
+
+const VisaProcessingMainContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+`;

@@ -1,6 +1,5 @@
 import { createGlobalStyle } from "styled-components";
 
-
 const GlobalStyle = createGlobalStyle`
 * {
   margin: 0;
@@ -24,6 +23,7 @@ body {
     line-height: 1.5;
     color: #000;
     max-width: 1920px;
+    margin: auto;
 }
 
 code {
