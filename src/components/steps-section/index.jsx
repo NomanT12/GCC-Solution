@@ -18,7 +18,8 @@ const BusinessSetupComponent = () => {
       <SectionRight>
         <p className="ap_number">1</p>
         <p className="ap_title">
-          One-to-one Consultation with Business Setup Advisor
+          One-to-one Consultation with Business 
+          <p>Setup Advisor</p>
         </p>
         <p className="ap_desc">
           Arrange a face-to-face meeting or a Zoom call with one of our
@@ -77,7 +78,7 @@ const SectionRight = styled.div`
     line-height: 38px;
     letter-spacing: -0.5px;
     margin-bottom: 45px;
-    width: 534px;
+    ${'' /* width: 534px; */}
   }
   .ap_desc {
     color: ${({ theme }) => theme.white};
@@ -85,7 +86,7 @@ const SectionRight = styled.div`
     font-weight: 400;
     line-height: 33px; /* 165% */
     letter-spacing: -0.5px;
-    width: 729px;
+    ${'' /* width: 729px; */}
     margin-bottom: 17px;
   }
 `;

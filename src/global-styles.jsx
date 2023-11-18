@@ -10,7 +10,7 @@ const GlobalStyle = createGlobalStyle`
 }
 
 body {
-  background-color: #287389;
+  ${'' /* background-color: #287389; */}
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", "Montserrat",
     "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
