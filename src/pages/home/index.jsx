@@ -1,13 +1,17 @@
 import React from 'react'
 
 import NotificationBar from 'components/notification-bar'
-import HeaderContainer from 'components/common/header-container'
+import { HeaderContainer } from 'components/common'
+import MainHeader from 'components/main-header'
+import BusinessSetupComponent from 'components/steps-section'
 
 const Home = () => {
+  
   return (
     <>
       <NotificationBar />
-      <HeaderContainer/>
+      <HeaderContainer> <MainHeader /> </HeaderContainer>
+      <BusinessSetupComponent/>
     </>
   )
 }
