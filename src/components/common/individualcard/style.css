@@ -18,6 +18,7 @@
   font-weight: 400;
   line-height: normal;
   text-transform: uppercase;
+  
 }
 .Individual-Content01P {
   color: #fff;
@@ -27,4 +28,57 @@
   font-weight: 600;
   line-height: normal;
   text-transform: uppercase;
+  text-align: center;
+  margin-top: 8px;
+}
+
+.VisaProcesing_heading_text{
+  color: #000;
+font-family: Montserrat;
+font-size: 28px;
+font-style: normal;
+font-weight: 600;
+line-height: 33px; /* 117.857% */
+letter-spacing: -0.5px;
+text-transform: uppercase;
+margin-bottom: 62px;
+text-align: center;
+}
+.VisaProcesing_subheading_text{
+  color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 22px;
+font-style: normal;
+font-weight: 500;
+line-height: 33px; 
+letter-spacing: -0.5px;
+text-align: center;
+margin-bottom: 42px;
+}
+.VisaProcesing_Content_text{
+  color: #000;
+text-align: center;
+font-family: Montserrat;
+font-size: 21px;
+font-style: normal;
+font-weight: 400;
+line-height: 34px;
+letter-spacing: -0.5px;
+
+}
+.VisaProcesing_Button{
+  margin-top: 150px;
+  border-radius: 35px;
+background: #00D0B0;
+color: #FFF;
+font-family: Montserrat;
+font-size: 18px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+text-transform: uppercase;
+padding: 14px 31px;
+border: none;
+cursor: pointer;
 }

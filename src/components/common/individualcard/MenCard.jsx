@@ -4,14 +4,15 @@ import "./style.css";
 
 const MenCard = () => {
   const IndividualCardContainer = styled.div`
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 0px 10px 10px 0px;
     background: radial-gradient(
       72.07% 72.07% at 50% 27.93%,
       #2a323d 0%,
       #222831 100%
     );
 
-    ${'' /* width: 560px; */}
+    width: 33%;
+    padding: 25px;
     height: 785px;
     margin-top: 62px;
     flex-shrink: 0;

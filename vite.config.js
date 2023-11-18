@@ -7,6 +7,8 @@ const fileNames = [
   "assets",
   "constants",
   "pages",
+  "routes",
+  "data",
 ];
 const filePaths = fileNames.reduce((acc, cur) => ({
   ...acc,

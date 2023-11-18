@@ -1,6 +1,7 @@
 import React from 'react'
 
 import styled from 'styled-components'
+import { device } from 'utils/devices';
 
 const NotificationBar = () => {
   return (
@@ -20,7 +21,10 @@ const NBmain = styled.div`
   color: ${({ theme }) => theme.white};
   display: flex;
   justify-content: space-between;
-  align-items: center ;
+  align-items: center;
   font-weight: 500;
-  padding: 0 120px ;
+  padding: 0 120px;
+  @media ${device.laptopXL} {
+    padding: 0 90px;
+  }
 `;

@@ -11,9 +11,11 @@ const FemalCard = () => {
       #222831 100%
     );
 
-    ${'' /* width: 560px; */}
+    width: 33%;
+    padding: 25px;
     height: 785px;
     margin-top: 62px;
+    padding: 25px;
     flex-shrink: 0;
     position: relative;
   `;

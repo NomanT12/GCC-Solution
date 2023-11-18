@@ -1,8 +1,32 @@
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 import Card from "../../../assets/images/freezonecard.png";
+import Card1 from "../../../assets/images/offshorecard.png";
+import Card2 from "../../../assets/images/onshorecard.png";
+
+const CardData = [
+  {
+    title: 'Free Zone',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    buttonText: 'Learn more',
+    backgroundImage: Card,
+  },
+  {
+    title: 'Offshore',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    buttonText: 'Learn more',
+    backgroundImage: Card1,
+  },
+  {
+    title: 'Onshore',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.',
+    buttonText: 'Learn more',
+    backgroundImage: Card2,
+  },
+];
 
 const CardsMain = styled.div`
-  background-image: url(${Card});
+  background-image: url(${(props) => props.image});
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -31,7 +55,7 @@ const CardsMainContainer = styled.div`
 
 const CardsContentHeading = styled.p`
   color: #fff;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 600;
@@ -55,12 +79,13 @@ const CardsButton = styled.button`
   text-transform: uppercase;
   border: none;
   margin-top: 20px;
+  cursor: pointer;
 `;
 
 const CardsContentDiscreption = styled.p`
   color: #fff;
   text-align: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 33px;
@@ -68,19 +93,32 @@ const CardsContentDiscreption = styled.p`
   margin: 0;
 `;
 
-const Cards = () => {
+const Cards = ({ title, description, buttonText, image }) => {
   return (
-    <CardsMain>
+    <CardsMain image={image}>
       <CardsMainContainer>
-        <CardsContentHeading>Free Zone</CardsContentHeading>
-        <CardsContentDiscreption>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt.
-        </CardsContentDiscreption>
-        <CardsButton>Learn more</CardsButton>
+        <CardsContentHeading>{title}</CardsContentHeading>
+        <CardsContentDiscreption>{description}</CardsContentDiscreption>
+        <CardsButton>{buttonText}</CardsButton>
       </CardsMainContainer>
     </CardsMain>
   );
 };
 
-export default Cards;
+const CardContainer = () => {
+  return (
+    <>
+      {CardData.map((card, index) => (
+        <Cards
+          key={index}
+          title={card.title}
+          description={card.description}
+          buttonText={card.buttonText}
+          image={card.backgroundImage}
+        />
+      ))}
+    </>
+  );
+};
+
+export default CardContainer;
