@@ -97,10 +97,10 @@ export const EcosytemContainer = styled.div`
 
   .ec_left_light_effect {
     position: absolute;
-    bottom: 26px;
+    bottom: 0;
     left: 0;
-    width: 200px;
-    height: 100px;
+    width: 220px;
+    height: 132px;
     /* left: -102px; */
     /* width: 266px;
     height: 132px; */

@@ -2,15 +2,11 @@ import React from "react";
 
 import { Stepper } from "components/common";
 import { HeaderSteps } from "data/headerData";
-import SR from "assets/images/SR_gradient.png";
-import SL from "assets/images/SL_gradient.png";
 import styled from "styled-components";
 
 const BusinessSetupComponent = () => {
   return (
     <BSCmain>
-      <img className="grad right" src={SR} />
-      <img className="grad left" src={SL} />
       <SectionLeft>
         <Stepper data={HeaderSteps} sectionTitle />
       </SectionLeft>
@@ -18,7 +14,8 @@ const BusinessSetupComponent = () => {
       <SectionRight>
         <p className="ap_number">1</p>
         <p className="ap_title">
-          One-to-one Consultation with Business Setup Advisor
+          One-to-one Consultation with Business
+          <p>Setup Advisor</p>
         </p>
         <p className="ap_desc">
           Arrange a face-to-face meeting or a Zoom call with one of our
@@ -32,6 +29,8 @@ const BusinessSetupComponent = () => {
           eiusmod tempor incididunt.
         </p>
       </SectionRight>
+      <div className="ec_left_light_effect"></div>
+      <div className="ec_right_light_effect"></div>
     </BSCmain>
   );
 };
@@ -39,24 +38,40 @@ const BusinessSetupComponent = () => {
 export default BusinessSetupComponent;
 
 const BSCmain = styled.div`
+  position: relative;
   display: flex;
   background: #222831;
   color: white;
   padding: 93px 131px 51px 131px;
   position: relative;
-  overflow: hidden;
   z-index: 1;
-  .grad {
+
+  .ec_left_light_effect {
     position: absolute;
-    z-index: -1;
-    &.right {
-      right: -20px;
-      top: -235px;
-    }
-    &.left {
-      left: -75px;
-      bottom: -240px;
-    }
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    height: 132px;
+    /* left: -102px; */
+    /* width: 266px;
+    height: 132px; */
+    background: rgba(79, 138, 139, 0.85);
+    filter: blur(125px);
+    z-index: 1;
+  }
+
+  .ec_right_light_effect {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    /* right: -152px; */
+    /* width: 350px;
+    height: 234px; */
+    z-index: 1;
+    background: rgba(79, 138, 139, 0.89);
+    filter: blur(125px);
   }
 `;
 
@@ -77,15 +92,13 @@ const SectionRight = styled.div`
     line-height: 38px;
     letter-spacing: -0.5px;
     margin-bottom: 45px;
-    width: 534px;
   }
   .ap_desc {
     color: ${({ theme }) => theme.white};
     font-size: 20px;
     font-weight: 400;
-    line-height: 33px; /* 165% */
+    line-height: 33px;
     letter-spacing: -0.5px;
-    width: 729px;
     margin-bottom: 17px;
   }
 `;
