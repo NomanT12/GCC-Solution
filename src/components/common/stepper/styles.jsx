@@ -69,6 +69,7 @@ export const Steps = styled.div`
       display: flex;
       justify-content: center;
       align-items: center;
+      flex-shrink: 0;
       &.c_active {
         border-color: ${({ theme }) => theme.activePoint};
       }
